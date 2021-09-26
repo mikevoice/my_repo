@@ -12,8 +12,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo push to GitHub!
-          echo push to GitLab!
-          git push gitlab --all
-          echo push to Bitbucket!
-          git push bitbuck --all
-
+          # echo push to GitLab!
+          # git push gitlab --all
+          # echo push to Bitbucket!
+          # git push bitbuck --all
+          git remote -v
