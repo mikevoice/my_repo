@@ -13,6 +13,7 @@ jobs:
         run: |
           echo push to GitHub!
           echo push to GitLab!
+          git push gitlab --all
           echo push to Bitbucket!
-
+          git push bitbuck --all
 
