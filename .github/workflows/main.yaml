@@ -1,0 +1,18 @@
+name: Automate-pushing
+
+on:
+  push:
+
+jobs:
+  My-build:
+      runs-on: ubuntu-latest
+      steps:
+      - run: echo " The changes will be pushed to GitHub, GitLab and Bitbucket repositories "
+      - uses: actions/checkout@v1
+      - name: Run a multi-line script
+        run: |
+          echo push to GitHub!
+          echo push to GitLab!
+          echo push to Bitbucket!
+
+
