@@ -8,7 +8,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Install SSH key
-        uses: actions/ssh-key-action@v1
+        uses: mikevoice/ssh-key-action@v1
         with:
           key: ${{ secrets.KEY }}       
       - uses: actions/checkout@v1
