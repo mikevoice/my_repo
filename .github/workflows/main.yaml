@@ -7,7 +7,6 @@ jobs:
   My-build:
       runs-on: ubuntu-latest
       steps:
-      - name: Install SSH Key
       - uses: actions/checkout@v1
         run: |
           echo push to GitHub!
