@@ -8,7 +8,10 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - run: echo " The changes will be pushed to GitHub, GitLab and Bitbucket repositories "
-      - uses: actions/checkout@v1
+      - name: Install SSH Key
+        uses: actions/ssh-key-action@v2
+        with:
+           key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Run a multi-line script
         run: |
           echo push to GitHub!
