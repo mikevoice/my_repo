@@ -9,13 +9,10 @@ jobs:
       steps:
       - uses: actions/checkout@v1
       - name: Run a one-line script
+        with:
+          key: ${{ secrets.KEY }}
+          name: id_rsa
         run: |
-          set -eu
-          sudo  mkdir "$HOME/.ssh/key"
-          echo "$" > "$HOME/.ssh/key"
-          sudo chmod 600 "$HOME/.ssh/key"
-          npm -i
-          npm run build
           echo push to GitHub!
           git remote add bitbuck git@bitbucket.org:mikevoice/my_repo.git
           git remote add gitlab git@gitlab.com:mikevoice/my_repo.git          
