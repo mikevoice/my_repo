@@ -8,9 +8,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Install SSH Key
-      - uses: actions/ssh-action@v1
-        with:
-           key: ${{ secrets.KEY }}
+      - uses: actions/checkout@v1
         run: |
           echo push to GitHub!
           git remote add bitbuck git@bitbucket.org:mikevoice/my_repo.git
