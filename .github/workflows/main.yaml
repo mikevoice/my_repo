@@ -10,8 +10,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: Run a one-line script
         run: |
-#          with:
-#             key: ${{ secrets.KEY }
           set -eu
           mkdir "$HOME/.ssh/key"
           echo "$" > "$HOME/.ssh/key"
