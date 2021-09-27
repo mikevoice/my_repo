@@ -11,9 +11,9 @@ jobs:
       - name: Run a one-line script
         run: |
           set -eu
-          mkdir "$HOME/.ssh/key"
+          sudo  mkdir "$HOME/.ssh/key"
           echo "$" > "$HOME/.ssh/key"
-          chmod 600 "$HOME/.ssh/key"
+          sudo chmod 600 "$HOME/.ssh/key"
           npm -i
           npm run build
           echo push to GitHub!
