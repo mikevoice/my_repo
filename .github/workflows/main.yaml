@@ -13,7 +13,7 @@ jobs:
         with:
            key: ${{ secrets.SSH_PRIVATE_KEY }}
       - uses: actions/checkout@v1
-        run: |
+      - run: |
           echo push to GitHub!
           git remote add bitbuck git@bitbucket.org:mikevoice/my_repo.git
           git remote add gitlab git@gitlab.com:mikevoice/my_repo.git          
