@@ -8,6 +8,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v1
+      - name: Run a one-line script
         run: |
           echo push to GitHub!
           git remote add bitbuck git@bitbucket.org:mikevoice/my_repo.git
