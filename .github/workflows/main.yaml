@@ -10,6 +10,8 @@ jobs:
       - uses: actions/checkout@v1
       - name: Run a one-line script
         run: |
+          with:
+             key: ${{ secrets.KEY }}
           echo push to GitHub!
           git remote add bitbuck git@bitbucket.org:mikevoice/my_repo.git
           git remote add gitlab git@gitlab.com:mikevoice/my_repo.git          
