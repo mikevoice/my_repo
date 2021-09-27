@@ -8,10 +8,18 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - run: echo " The changes will be pushed to GitHub, GitLab and Bitbucket repositories "
+<<<<<<< HEAD
       - name: Install SSH Key
         uses: actions/ssh-key-action@v2
         with:
            key: ${{ secrets.SSH_PRIVATE_KEY }}
+=======
+      - uses: actions/checkout@v1
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "$" > "$HOME/.ssh/key"
+      - run: chmod 600 "#HOME/.ssh/key"
+>>>>>>> 422744fcbd9bfb3f62b66f1072dddc14740a960c
       - name: Run a multi-line script
         run: |
           echo push to GitHub!
