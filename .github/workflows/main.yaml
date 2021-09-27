@@ -10,7 +10,8 @@ jobs:
       - name: Setup SSH Agent
         uses: yakuhzi/setup-ssh-agent@v1.5.4
         with:
-          public: ${{ secrets.KEY }}       
+          public: ${{ secrets.SSH_PUBLIC_KEY }}
+          private: ${{ secrets.SSH_PRIVATE_KEY }}     
       - uses: actions/checkout@v1
       - name: Run a one-line script
         run: |
