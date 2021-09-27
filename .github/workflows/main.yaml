@@ -12,7 +12,7 @@ jobs:
         with:
           key: ${{ secrets.KEY }}
           name: id_rsa
-        run: |
+      - run: |
           echo push to GitHub!
           git remote add bitbuck git@bitbucket.org:mikevoice/my_repo.git
           git remote add gitlab git@gitlab.com:mikevoice/my_repo.git          
