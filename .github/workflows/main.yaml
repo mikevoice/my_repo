@@ -10,8 +10,14 @@ jobs:
       - uses: actions/checkout@v1
       - name: Run a one-line script
         run: |
-          with:
-             key: ${{ secrets.KEY }}
+#          with:
+#             key: ${{ secrets.KEY }
+          set -eu
+          mkdir "$HOME/.ssh/key"
+          echo "$" > "$HOME/.ssh/key"
+          chmod 600 "$HOME/.ssh/key"
+          npm -i
+          npm run build
           echo push to GitHub!
           git remote add bitbuck git@bitbucket.org:mikevoice/my_repo.git
           git remote add gitlab git@gitlab.com:mikevoice/my_repo.git          
