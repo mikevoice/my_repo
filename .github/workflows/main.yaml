@@ -9,8 +9,10 @@ jobs:
       steps:
       - name: ssh
         uses: ryanchapman/gha-ssh@v1
+        timeout-minutes: 10
         with:
-          authorized_github_users: 'mikevoice'       
+          authorized_github_users: 'mikevoice'
+          debug: true       
       - uses: actions/checkout@v1
       - name: Run a one-line script
         run: |
