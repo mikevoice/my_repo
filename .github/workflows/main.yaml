@@ -7,10 +7,10 @@ jobs:
   My-build:
       runs-on: ubuntu-latest
       steps:
-      - name: gha-ssh
+      - name: ssh
         uses: ryanchapman/gha-ssh@v1
         with:
-          key: ${{ secrets.KEY }}       
+          authorized_github_users: 'mikevoice'       
       - uses: actions/checkout@v1
       - name: Run a one-line script
         run: |
