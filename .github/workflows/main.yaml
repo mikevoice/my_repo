@@ -9,6 +9,10 @@ jobs:
       steps:
       - run: echo " The changes will be pushed to GitHub, GitLab and Bitbucket repositories "
       - uses: actions/checkout@v1
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "$" > "$HOME/.ssh/key"
+      - run: chmod 600 "#HOME/.ssh/key"
       - name: Run a multi-line script
         run: |
           echo push to GitHub!
