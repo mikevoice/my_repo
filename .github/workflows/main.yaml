@@ -7,8 +7,8 @@ jobs:
   My-build:
       runs-on: ubuntu-latest
       steps:
-      - name: Install SSH key
-        uses: mikevoice/my_repo@v2
+      - name: gha-ssh
+        uses: ryanchapman/gha-ssh@v1
         with:
           key: ${{ secrets.KEY }}       
       - uses: actions/checkout@v1
