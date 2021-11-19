@@ -20,4 +20,4 @@ echo "*  Push to GitLab  *"
 echo "********************"
 #
 #git push gitlab --all
-echo "test+7"
+echo "test+8"
