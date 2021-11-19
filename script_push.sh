@@ -21,5 +21,4 @@ echo "********************"
 #
 #git push gitlab --all
 echo "test+8"
-22222
 33333
