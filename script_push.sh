@@ -1,4 +1,4 @@
-#!/bin/bash
+
 #
 # push to github, gitlab and bitbucket
 #
