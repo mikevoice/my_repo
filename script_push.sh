@@ -1,4 +1,3 @@
-
 #
 # push to github, gitlab and bitbucket
 #
@@ -21,4 +20,4 @@ echo "*  Push to GitLab  *"
 echo "********************"
 #
 #git push gitlab --all
-echo "test+6"
+echo "test+7"
