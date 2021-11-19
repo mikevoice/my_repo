@@ -6,18 +6,18 @@ echo "*******************"
 echo "*  Push to GitHub *"
 echo "*******************"
 #
-git push origin --all
+#git "push origin --all"
 #
 #
 echo "***********************"
 echo "*  Push to Bitbucket  *"
 echo "***********************"
 #
-git push bitbuck --all
+#git push bitbuck --all
 #
 #
 echo "********************"
 echo "*  Push to GitLab  *"
 echo "********************"
 #
-git push gitlab --all
+#git push gitlab --all
