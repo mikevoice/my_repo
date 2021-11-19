@@ -21,3 +21,4 @@ echo "*  Push to GitLab  *"
 echo "********************"
 #
 #git push gitlab --all
+echo "test"
